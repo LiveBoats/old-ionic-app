@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { HomePage } from '../pages/home/home';
 import { DataService } from '../providers/api.service';
+import { Configuration } from './configuration'
 
 @NgModule({
   declarations: [
@@ -20,6 +21,6 @@ import { DataService } from '../providers/api.service';
     AboutPage,
     HomePage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler} ]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, DataService, Configuration]
 })
 export class AppModule {}

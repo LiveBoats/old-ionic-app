@@ -11,6 +11,6 @@ import {DataService} from "../../providers/api.service";
 export class HomePage {
 
   constructor(private navCtrl: NavController, private dataService : DataService) {
-    console.log( this.dataService.getVesselBaseFromMmsi("308095000") )
+    this.dataService.getVesselBaseFromMmsi("308095000").subscribe(value => console.log(value))
   }
 }
