@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
-import {DataService} from "../../providers/api.service";
+import { DataService } from "../../providers/api.service";
 
 @Component({
   selector: 'page-home',
