@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { Splashscreen } from 'ionic-native';
-import { HomePage } from '../pages/home/home';
-import { DataService } from '../providers/api.service';
+import { HomePage } from './components/home/home'
+import { DataService } from './providers/api.service';
 
 @Component({
   template: `<ion-nav [root]="rootPage"></ion-nav>`,

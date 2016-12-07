@@ -2,12 +2,12 @@
  * Created by thomas on 30/11/16.
  */
 
-import { Configuration } from "./../app/configuration"
-import { Key } from "./../app/key"
+import { Configuration } from "./configuration"
+import { Key } from "./key"
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
-import { Vessel } from './../app/models/vessel';
+import { Vessel } from '../models/vessel';
 
 @Injectable()
 export class DataService {
